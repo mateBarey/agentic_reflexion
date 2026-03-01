@@ -1,0 +1,30 @@
+[project]
+name = "agentic-prac"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "el_guason", email = "georgeraulc@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "python-dotenv>=1.0.0",
+    "langchain-openai>=0.1.0",
+    "pydantic",
+    "langchain_tavily",
+    "langchain-core>=0.1.0",
+    "langgraph>=0.0.20",
+    "weasyprint>=60.0",
+    "tiktoken>=0.5.0",
+    "langsmith[openai-agents]",
+    "langchain_community",
+    "langchain>=0.3.0",
+    "ddgs>=9.10.0",
+    "wikipedia>=1.4.0",
+]
+[project.scripts]
+agentic-prac = "agentic_prac:main"
+
+[build-system]
+requires = ["uv_build>=0.10.7,<0.11.0"]
+build-backend = "uv_build"
