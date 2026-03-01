@@ -108,3 +108,4 @@ print(response1.tool_calls[0]['args'])
 response2 = calculator_llm.invoke("Multiply 7 by 8")
 print(response2.tool_calls[0]['args'])
 # Output: {"operation": "multiply", "a": 7.0, "b": 8.0}
+
